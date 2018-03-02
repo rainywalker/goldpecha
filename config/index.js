@@ -3,11 +3,9 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-
-const path = require('path')
 const proxyTable = {
   '/api': {
-    target: 'http:localhost:3000/api',
+    target: 'https://goldpecha.herokuapp.com/api',
     changeOrigin: true,
     pathRewrite: {
       '^/api': ''
