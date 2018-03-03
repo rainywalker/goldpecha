@@ -60,6 +60,7 @@
         li{
             &.noneBorder{border:none}
             width:180px;height:116px;margin-bottom:10px;border:1px solid #f5f5f5;
+            a{display: inline-block;height:116px}
             dl{
                 padding:10px;
                 border-top:4px solid #ffe11d;
@@ -73,7 +74,7 @@
                 }
             }
             &.noneBorder{
-                img{width:100%}
+                img{width:100%;height:100%}
             }
         }
         @media (max-width: 415px) {

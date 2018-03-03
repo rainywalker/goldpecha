@@ -8,7 +8,7 @@
             <h2>폐차 보상금을 알려드립니다.</h2>
         </div>
         <InputArea />
-        <h3 class="inNotice"><p>골드 폐차가 약속 드립니다.</p></h3>
+        <h3 class="inNotice"><p>골드폐차가 약속 드립니다.</p></h3>
         <BoxList />
         <h3 class="inNotice"><p>폐차 종류를 알려드립니다.</p></h3>
         <TabContents />
@@ -60,7 +60,7 @@
         background: #f5f5f5;height: 58px;line-height: 58px;margin-bottom:20px;font-weight: normal;font-size:28px;
     }
     .desc{
-        padding:0 20px;
+
         ul{
             max-width:$w;margin:$marg;padding-top:40px;
         }

@@ -119,7 +119,7 @@
                         <thead>
                         <tr>
                             <th class="none_l">사망 신고 전</th>
-                            <th>사망 신고 후</th>
+                            <th class="none_r">사망 신고 후</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -168,12 +168,12 @@
             </dl>
             <dl class="prepare_paper">
                 <dt>필요서류</dt>
-                <dd><table class="tbl">
+                <dd>
+                    <table class="tbl">
                     <caption class="blind">일반폐차</caption>
                     <thead>
                     <tr>
-                        <th class="none_l">법인</th>
-
+                        <th class="none_l none_r">법인</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -184,7 +184,8 @@
                         <td>폐업 사실 증명서</td>
                     </tr>
                     </tbody>
-                </table></dd>
+                </table>
+                </dd>
             </dl>
 
         </div>

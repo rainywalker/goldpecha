@@ -107,7 +107,7 @@
                 dt{display: block;float:left;clear:left;font-size: 19px;color:#666;height:30px;line-height: 30px;
                 }
                 dd{
-                    padding-left:100px;margin-bottom:20px;
+                    padding-left:80px;margin-bottom:20px;
                     input{
                         background:#f5f5f5 ;height:30px;border:0;width:100%;padding:10px;box-sizing: border-box;
                         color:#666;font-size: 16px;
