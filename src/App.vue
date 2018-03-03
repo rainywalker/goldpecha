@@ -15,7 +15,8 @@ html,body,a,img,dl,dt,dd,div,fieldset,legend,table,thead,th,tr,td,tbody,li,ol,ul
 figure,figcaption,h1,h2,h3,h4,h5,h6,p,strong{margin:0;padding:0;font-family:Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;}
 img, form, fieldset{border:0}
 li{list-style: none}
-html,body{min-height:100%}
-body{overflow-x: hidden}
+html,body{min-height:100%;overflow-x: hidden}
+body{word-break: break-all;}
+
 .blind{font-size: 0;width:0;height:0;opacity: 0;visibility:0;line-height: 0}
 </style>
