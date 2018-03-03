@@ -99,7 +99,7 @@ export default {
     footer{
         background: #f4f4f4;
         .copy{
-            max-width:$w;margin:20px auto 0;padding:20px 0;
+            max-width:$w;margin:20px auto 0;padding:20px;
             p{margin-bottom:5px;}
             p,address{font-size:13px;color:#000}
 

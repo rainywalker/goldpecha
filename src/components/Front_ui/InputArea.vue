@@ -17,7 +17,7 @@
                 <dd><input type="text" ref="car_num" v-model.trim="users.car_num"></dd>
             </dl>
             <button id="submitBtn" type="button" @click.prevent="onSubmit">정보 보내기</button>
-            <p class="desc">내용 확인 후 전문 폐차지도사가 직접 고객님께 연락 드리겠습니다.</p>
+            <p class="input_desc">내용 확인 후 전문 폐차지도사가 직접 고객님께 연락 드리겠습니다.</p>
         </fieldset>
     </div>
 </template>
@@ -94,6 +94,7 @@
     $w : 570px;
     $marg : 0 auto;
     $pd : 0 20px;
+
     .iptArea{
         max-width:$w;margin:$marg;padding:$pd;
         .topNotice{
@@ -118,7 +119,7 @@
                 display:inline-block;background:#ffe11d;width:100%;border:0;height:40px;font-size:20px;
                 font-weight: bold;line-height: 40px;cursor: pointer;
             }
-            .desc{font-size:14px;color:#9d9d9d;margin-top:10px}
+            .input_desc{font-size:14px;color:#9d9d9d;margin-top:10px;padding:0}
         }
 
     }

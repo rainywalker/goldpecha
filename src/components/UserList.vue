@@ -5,6 +5,9 @@
                 <span>{{user.username}}</span>
                 <span>{{user.phone}}</span>
                 <span>{{user.car}}</span>
+                <span>{{user.area}}</span>
+                <span>{{user.since}}</span>
+                <span>{{user.car_num}}</span>
                 <button type="button" @click="removeUser(user._id)">삭제</button>
             </li>
         </ul>
