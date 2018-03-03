@@ -95,21 +95,32 @@
 </script>
 
 <style lang="scss">
-    $w : 640px;
+    $w : 570px;
     $marg : 0 auto;
+    $pd : 0 40px;
 #warp{
     margin: 0 auto;
     h1{background:#ffe11d;text-align: center;height:58px;line-height:58px;font-size: 28px;letter-spacing:1px}
     .v_img{
-        width:$w;margin:50px auto 40px;text-align: left;
+        max-width:$w;margin:50px auto 40px;text-align: left;padding:$pd;
+        @media screen and (max-width:570px) {
+            img {
+                width: 100%;
+            }
+
+        }
+
     }
     .info{
         background:#ffe11d;height:58px;line-height:58px;margin-bottom:40px;
-        h2{width:$w;margin:$marg;font-size: 24px;font-weight: normal}
+        h2{max-width:$w;margin:$marg;font-size: 24px;font-weight: normal;padding:$pd;}
     }
     .iptArea{
-        width:$w;margin:$marg;
-        .topNotice{font-size:20px;margin-bottom:7px}
+        max-width:$w;margin:$marg;padding:$pd;
+        .topNotice{
+            font-size:16px;margin-bottom:7px;
+            strong{font-size:20px}
+        }
         fieldset{
             border:6px solid #f5f5f5;
             box-sizing: border-box;
