@@ -46,9 +46,8 @@
     h1{background:#ffe11d;text-align: center;height:58px;line-height:58px;font-size: 28px;letter-spacing:1px;}
     .v_img{
         max-width:$w;margin:40px auto 30px;text-align: left;padding:$pd;
-        @media screen and (max-width:570px) {
-            img {width: 100%;}
-        }
+        img{width:100%}
+
     }
     .info{
         background:#ffe11d;height:58px;line-height:58px;margin-bottom:40px;
@@ -58,11 +57,13 @@
     .inNotice{
         padding:0 20px;
         p{width:$w;margin:$marg}
-        background: #f5f5f5;height: 58px;line-height: 58px;margin-bottom:20px;font-weight: normal
+        background: #f5f5f5;height: 58px;line-height: 58px;margin-bottom:20px;font-weight: normal;font-size:28px;
     }
-    .desc ul{
-        max-width:$w;margin:$marg;padding-top:40px;
-        li{}
+    .desc{
+        padding:0 20px;
+        ul{
+            max-width:$w;margin:$marg;padding-top:40px;
+        }
     }
 }
 </style>

@@ -67,7 +67,7 @@ export default {
 $w : 570px;
 $marg : 0 auto;
 $pd : 0 20px;
-.tabContens{max-width:$w;margin:$marg}
+.tabContens{max-width:$w;margin:$marg;padding:0 20px}
 #tab_ul{
     display:flex;
     justify-content: center;

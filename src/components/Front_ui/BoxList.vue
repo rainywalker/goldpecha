@@ -32,7 +32,7 @@
             <li>
                 <dl>
                     <dt><em>05</em>쉽고 빠른 업무 처리</dt>
-                    <dd><strong>보험 해지용 말소증</strong>울 팩스, 이메일로 보내드립니다.</dd>
+                    <dd><strong>보험 해지용 말소증</strong>을 팩스, 이메일로 보내드립니다.</dd>
                 </dl>
             </li>
             <li class="noneBorder">
@@ -63,13 +63,16 @@
                 padding:10px;
                 border-top:4px solid #ffe11d;
                 dt{
-                    color:#000;font-size:16px;margin-bottom:10px;
+                    color:#000;font-size:16px;margin-bottom:10px;font-weight: bold;
                     em{display:inline-block;margin-right:5px;font-weight:bold;font-size:17px;color:#d26402;font-style: normal}
                 }
                 dd{
                     font-size:14px;color:#9d9d9d;
                     strong{color:#373737;font-weight: normal}
                 }
+            }
+            &.noneBorder{
+                img{width:100%}
             }
         }
     }
