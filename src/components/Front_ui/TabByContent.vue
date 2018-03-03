@@ -125,35 +125,35 @@
                         <tbody>
                         <tr>
                             <td>자동차 등록증</td>
-                            <td>자동차 등록증</td>
+                            <td class="none_r">자동차 등록증</td>
                         </tr>
                         <tr>
                             <td>신분증 사본</td>
-                            <td>고인 기본증명서</td>
+                            <td class="none_r">고인 기본증명서</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>고인 가족관계 증명서</td>
+                            <td class="none_r">고인 가족관계 증명서</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>가족관계증명서 상의 가족 신분증 사</td>
+                            <td class="none_r">가족관계증명서 상의 가족 신분증 사</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>상속인 인감증명서</td>
+                            <td class="none_r">상속인 인감증명서</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>포기 각서</td>
+                            <td class="none_r">포기 각서</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>위임장</td>
+                            <td class="none_r">위임장</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>한정 승인의 경우-한정승인 판결문 사본</td>
+                            <td class="none_r">한정 승인의 경우-한정승인 판결문 사본</td>
                         </tr>
                         </tbody>
                     </table>
@@ -178,10 +178,10 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>법인 등기부등본 (말소사항 포함)</td>
+                        <td class="none_r">법인 등기부등본 (말소사항 포함)</td>
                     </tr>
                     <tr>
-                        <td>폐업 사실 증명서</td>
+                        <td class="none_r">폐업 사실 증명서</td>
                     </tr>
                     </tbody>
                 </table>
@@ -214,22 +214,22 @@
                         <tbody>
                         <tr>
                             <td>자동차 등록증</td>
-                            <td>자동차 등록증</td>
+                            <td class="none_r">자동차 등록증</td>
                         </tr>
                         <tr>
                             <td>신분증 사본</td>
-                            <td>법인 사업자 등록증</td>
+                            <td class="none_r">법인 사업자 등록증</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>법인 인감증명서</td>
+                            <td class="none_r">법인 인감증명서</td>
                         </tr>                <tr>
                             <td></td>
-                            <td>법인 등기부등본</td>
+                            <td class="none_r">법인 등기부등본</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>위임장</td>
+                            <td class="none_r">위임장</td>
                         </tr>
                         </tbody>
                     </table>
@@ -270,10 +270,11 @@
 }
 .tbl{
     border-collapse: collapse;width:100%;
+    .none_l{border-left:0}
+    .none_r{border-right:0}
     th{
         border:1px solid #000;height:40px;font-size:16px;
-        &.none_l{border-left:0}
-        &.none_r{border-right:0}
+
     }
     td{border:1px solid #f4f4f4;font-size:16px;color:#9d9d9d;text-align: center;height:40px;line-height: 40px}
     td:nth-child(3n) {border-right:0}

@@ -35,8 +35,8 @@
                     <dd><strong>보험 해지용 말소증</strong>을 팩스, 이메일로 보내드립니다.</dd>
                 </dl>
             </li>
-            <li class="noneBorder">
-                <a href="tel:010-7941-8785"><img src="../../assets/banner.jpg" alt=""></a>
+            <li class="banner">
+                <a href="tel:010-7941-8785"><span class="blind">전화 한통으로 견인에서 말소까지...</span></a>
             </li>
         </ul>
     </div>
@@ -60,7 +60,7 @@
         li{
             &.noneBorder{border:none}
             width:180px;height:116px;margin-bottom:10px;border:1px solid #f5f5f5;
-            a{display: inline-block;height:116px}
+            a{display: inline-block;width:100%;height:116px}
             dl{
                 padding:10px;
                 border-top:4px solid #ffe11d;
@@ -73,11 +73,17 @@
                     strong{color:#373737;font-weight: normal}
                 }
             }
-            &.noneBorder{
-                img{width:100%;height:100%}
+            &.banner{
+                background:#abdaeb;
+                a{
+                    display: inline-block;width:100%;height:116px;position: relative;
+                    &:before{display: block;width:180px;height:116px;position: absolute;margin-left:-90px;
+                        left:50%;top:0;content: '';background: url('../../assets/ban.png') no-repeat}
+
+                }
             }
         }
-        @media (max-width: 415px) {
+        @media (max-width: 410px) {
             li{width:100%}
         }
     }
