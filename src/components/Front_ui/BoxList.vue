@@ -4,21 +4,21 @@
             <li>
                 <dl>
                     <dt><em>01</em>최고가 폐차비 지급</dt>
-                    <dd>정기적인 시장 조사를 통해 고객께 <strong>최고가를 보상</strong>하겠습니다.</dd>
+                    <dd>정기적인 시장 조사를 통해 고객께 <strong>최고가를 보상</strong> 하겠습니다.</dd>
                 </dl>
 
             </li>
             <li>
                 <dl>
                     <dt><em>02</em>당일지급&현장지급</dt>
-                    <dd>과태료나 압류가 없다면<strong>현장에서도 입금가능</strong>합니다.</dd>
+                    <dd>과태료나 압류가 없다면<strong>현장에서도 입금가능</strong> 합니다.</dd>
                 </dl>
 
             </li>
             <li>
                 <dl>
                     <dt><em>03</em>쉽고 빠른 업무 처리</dt>
-                    <dd>날짜만 정해서 전화주시면 말소까지<strong>알아서 처리</strong>해드립니다.</dd>
+                    <dd>날짜만 정해서 전화주시면 말소까지<strong>알아서 처리</strong> 해드립니다.</dd>
                 </dl>
 
             </li>
@@ -53,9 +53,10 @@
     $marg : 0 auto;
     $pd : 0 20px;
 .boxList{
-    max-width:$w;margin: $marg;padding:0 20px;
+    max-width:$w;margin: $marg;padding:0 20px 30px;
     ul{
         display: flex;justify-content: space-between;flex-wrap:wrap;
+
         li{
             &.noneBorder{border:none}
             width:180px;height:116px;margin-bottom:10px;border:1px solid #f5f5f5;
@@ -67,13 +68,16 @@
                     em{display:inline-block;margin-right:5px;font-weight:bold;font-size:17px;color:#d26402;font-style: normal}
                 }
                 dd{
-                    font-size:14px;color:#9d9d9d;
+                    font-size:14px;color:#9d9d9d;word-break: break-all;
                     strong{color:#373737;font-weight: normal}
                 }
             }
             &.noneBorder{
                 img{width:100%}
             }
+        }
+        @media (max-width: 415px) {
+            li{width:100%}
         }
     }
 }

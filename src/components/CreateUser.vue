@@ -50,7 +50,7 @@
 
     }
     .info{
-        background:#ffe11d;height:58px;line-height:58px;margin-bottom:40px;
+        background:#ffe11d;height:58px;line-height:58px;margin-bottom:20px;
         h2{max-width:$w;margin:$marg;font-size: 24px;font-weight: normal;padding:$pd;}
     }
 
