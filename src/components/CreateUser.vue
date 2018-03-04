@@ -22,7 +22,7 @@
         </div>
         <footer>
             <div class="copy">
-                <p>Copy right Goldpecha All reserverd 2018</p>
+                <p>Copyright Goldpecha All reserverd 2018</p>
                 <address>양주폐차산업 / 사업자 등록번호 127-86-50736 / 관허 03-1 / 양주시 광적면 화합로 74번길 18</address>
             </div>
         </footer>
