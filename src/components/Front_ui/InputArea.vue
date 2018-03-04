@@ -11,8 +11,6 @@
                 <dd><input type="text" ref="phone" v-model.trim="users.phone"></dd>
                 <dt>차종</dt>
                 <dd><input type="text" ref="car" v-model.trim="users.car"></dd>
-                <dt>연식</dt>
-                <dd><input type="text" ref="since" v-model.trim="users.since"></dd>
                 <dt>차량번호</dt>
                 <dd><input type="text" ref="car_num" v-model.trim="users.car_num"></dd>
             </dl>
@@ -53,11 +51,7 @@
                     this.$refs.car.focus();
                     return false
                 }
-                if (this.$refs.since.value === '') {
-                    alert('연식을 입력해주세요');
-                    this.$refs.since.focus();
-                    return false
-                }
+
                 if (this.$refs.car_num.value === '') {
                     alert('차량번호를 입력해주세요');
                     this.$refs.car_num.focus();
@@ -79,7 +73,6 @@
                     this.$refs.area.value = '';
                     this.$refs.phone.value = '';
                     this.$refs.car.value = '';
-                    this.$refs.since.value = '';
                     this.$refs.car_num.value = '';
                 })
                 .catch(e => {

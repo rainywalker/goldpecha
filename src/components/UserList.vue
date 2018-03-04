@@ -17,7 +17,6 @@
                     <td>{{user.phone}}</td>
                     <td>{{user.car}}</td>
                     <td>{{user.area}}</td>
-                    <td>{{user.since}}</td>
                     <td>{{user.car_num}}</td>
                     <td><button type="button" @click="removeUser(user._id)">삭제</button></td>
                 </tr>

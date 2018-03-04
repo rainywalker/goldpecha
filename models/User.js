@@ -5,7 +5,6 @@ const carSchema = new mongoose.Schema({
   area : String,
   phone : String,
   car : String,
-  since : String,
   car_num : String
 });
 
