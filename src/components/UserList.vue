@@ -7,8 +7,8 @@
                 <th>연락처</th>
                 <th>차종</th>
                 <th>지역</th>
-                <th>연식</th>
-                <th colspan="2">차량번호</th>
+                <th>차량번호</th>
+                <th>Action</th>
             </tr>
             </thead>
             <tbody>
