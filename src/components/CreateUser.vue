@@ -3,7 +3,7 @@
         <header>
             <h1>골드폐차</h1>
             <div class="v_img">
-                <a href="tel:010-7941-8785"><img src="../assets/v_img.jpg" alt=""></a>
+                <a href="tel:010-7941-8785"><img src="http://pyechagold.cdn3.cafe24.com/v_img.jpg" alt=""></a>
             </div>
         </header>
         <div class="info">
@@ -77,22 +77,6 @@ export default {
                 &::before{display: block;position: absolute;background:#000;left:0;top:5px;width:4px;height:4px;
                     border-radius: 4px;
                     content: '';}
-            }
-        }
-    }
-    .familySite{
-        padding:20px 0 0;border-top:1px solid #d9d9d9;margin-top:20px;
-        ul{
-            overflow:hidden;max-width:$w;margin:$marg;
-            li{
-                float:left;width:33.3333%;height:50px;
-                span{
-                    display: inline-block;width:100%;height:50px;background: url('../assets/sp_01.png') no-repeat -9999px -9999px;
-
-                    &.sp1{height:35px;background-position: 0 0}
-                    &.sp2{height:40px;background-position:0 -38px}
-                    &.sp3{height:44px;background-position:0 -80px}
-                }
             }
         }
     }

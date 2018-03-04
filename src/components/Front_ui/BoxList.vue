@@ -78,7 +78,7 @@
                 a{
                     display: inline-block;width:100%;height:116px;position: relative;
                     &:before{display: block;width:180px;height:116px;position: absolute;margin-left:-90px;
-                        left:50%;top:0;content: '';background: url('../../assets/ban.png') no-repeat}
+                        left:50%;top:0;content: '';background: url('http://pyechagold.cdn3.cafe24.com/ban.png') no-repeat}
 
                 }
             }
