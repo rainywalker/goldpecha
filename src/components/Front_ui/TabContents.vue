@@ -32,9 +32,10 @@ export default {
                 },
                 {
                     id : 2,
-                    name : '문제차',
+                    name : '차령초과(압류)폐차',
                     isActive : false
                 },
+
                 {
                     id : 3,
                     name : '상속폐차',
@@ -47,9 +48,10 @@ export default {
                 },
                 {
                     id : 5,
-                    name : '차령초과(압류)폐차',
+                    name : '문제차',
                     isActive : false
                 }
+
             ]
         }
     },

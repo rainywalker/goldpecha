@@ -101,8 +101,49 @@
         </div>
         <div class="con" v-else-if="setActivated === 2">
             <dl class="prepare_paper">
-                <dt>문제차</dt>
-                <dd>- 자동차등록증 상의 차주와 실제 소유주가 동일한데 저당과 압류가 설정되어 있어 일반폐차가 불가능한 차량</dd>
+                <dt>차령초과</dt>
+                <dd>- 압류나 저당이 많아, 당장 납부가 불가능한 차량</dd>
+                <dd>- 45~60일 소요 (압류나 저당이 걸려 있기 때문에, 촉탁기관이나 채무자의 동의를 구하고 권리 행사를 할 수 있음)</dd>
+                <dd>- 대상차량</dd>
+                <dd class="middot">&middot; 승용 - 11년 이상</dd>
+                <dd class="middot">&middot; 승합 / 화물 / 특수 (경형 및소형) - 10년 이상</dd>
+                <dd class="middot">&middot; 승합 (중형 및 대형) - 10년 이상</dd>
+                <dd class="middot">&middot; 화물 / 특수 (중형 및 대형) - 12년 이상</dd>
+            </dl>
+            <dl class="prepare_paper">
+                <dt>필요서류</dt>
+                <dd>
+                    <table class="tbl">
+                        <caption class="blind">일반폐차</caption>
+                        <thead>
+                        <tr>
+                            <th class="none_l">개인</th>
+                            <th class="none_r">법인</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>자동차 등록증</td>
+                            <td class="none_r">자동차 등록증</td>
+                        </tr>
+                        <tr>
+                            <td>신분증 사본</td>
+                            <td class="none_r">법인 사업자 등록증</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="none_r">법인 인감증명서</td>
+                        </tr>                <tr>
+                            <td></td>
+                            <td class="none_r">법인 등기부등본</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="none_r">위임장</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </dd>
             </dl>
         </div>
         <div class="con" v-else-if="setActivated === 3">
@@ -191,51 +232,11 @@
         </div>
         <div class="con" v-else-if="setActivated === 5">
             <dl class="prepare_paper">
-                <dt>차령초과</dt>
-                <dd>- 압류나 저당이 많아, 당장 납부가 불가능한 차량</dd>
-                <dd>- 45~60일 소요 (압류나 저당이 걸려 있기 때문에, 촉탁기관이나 채무자의 동의를 구하고 권리 행사를 할 수 있음)</dd>
-                <dd>- 대상차량</dd>
-                <dd class="middot">&middot; 승용 - 11년 이상</dd>
-                <dd class="middot">&middot; 승합 / 화물 / 특수 (경형 및소형) - 10년 이상</dd>
-                <dd class="middot">&middot; 승합 (중형 및 대형) - 10년 이상</dd>
-                <dd class="middot">&middot; 화물 / 특수 (중형 및 대형) - 12년 이상</dd>
-            </dl>
-            <dl class="prepare_paper">
-                <dt>필요서류</dt>
-                <dd>
-                    <table class="tbl">
-                        <caption class="blind">일반폐차</caption>
-                        <thead>
-                        <tr>
-                            <th class="none_l">개인</th>
-                            <th class="none_r">법인</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>자동차 등록증</td>
-                            <td class="none_r">자동차 등록증</td>
-                        </tr>
-                        <tr>
-                            <td>신분증 사본</td>
-                            <td class="none_r">법인 사업자 등록증</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="none_r">법인 인감증명서</td>
-                        </tr>                <tr>
-                            <td></td>
-                            <td class="none_r">법인 등기부등본</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="none_r">위임장</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </dd>
+                <dt>문제차</dt>
+                <dd>- 자동차등록증 상의 차주와 실제 소유주가 동일한데 저당과 압류가 설정되어 있어 일반폐차가 불가능한 차량</dd>
             </dl>
         </div>
+
     </section>
 </template>
 
@@ -276,7 +277,7 @@
         border:1px solid #000;height:40px;font-size:16px;
 
     }
-    td{border:1px solid #f4f4f4;font-size:16px;color:#9d9d9d;text-align: center;height:40px;line-height: 40px}
+    td{border:1px solid #f4f4f4;font-size:16px;color:#595959;text-align: center;height:40px;line-height: 40px}
     td:nth-child(3n) {border-right:0}
     td:nth-child(3n+1) {border-left:0}
 }

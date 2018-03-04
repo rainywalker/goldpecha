@@ -31,7 +31,7 @@
             </li>
             <li>
                 <dl>
-                    <dt><em>05</em>쉽고 빠른 업무 처리</dt>
+                    <dt><em>05</em>쉽고 빠른 업무처리</dt>
                     <dd><strong>보험 해지용 말소증</strong>을 팩스, 이메일로 보내드립니다.</dd>
                 </dl>
             </li>
@@ -79,7 +79,6 @@
                     display: inline-block;width:100%;height:116px;position: relative;
                     &:before{display: block;width:180px;height:116px;position: absolute;margin-left:-90px;
                         left:50%;top:0;content: '';background: url('http://pyechagold.cdn3.cafe24.com/ban.png') no-repeat}
-
                 }
             }
         }
