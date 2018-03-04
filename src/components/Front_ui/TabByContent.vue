@@ -3,10 +3,10 @@
         <div class="con" v-if="setActivated === 0">
             <dl class="prepare_paper">
                 <dt>일반폐차</dt>
-                <dd>- 압류나 저당이 없고, 혹시 압류나 저당이 있어도 바로 완납이 가능한 차량</dd>
-                <dd>- 24시간 이내</dd>
+                <dd>압류나 저당이 없고, 혹시 압류나 저당이 있어도 바로 완납이 가능한 차량</dd>
+                <dd>24시간 이내</dd>
             </dl>
-            <dl class="prepare_paper">
+            <dl class="prepare_paper ds">
                 <dt>필요서류</dt>
                 <dd>
                     <table class="tbl">
@@ -49,14 +49,14 @@
         <div class="con" v-else-if="setActivated === 1">
             <dl class="prepare_paper">
                 <dt>조기폐차</dt>
-                <dd>- 정상운행이 가능한 노후 경유자동차를 조기에 폐차할 경우 국가에서 보조금을 지원하는 제도</dd>
-                <dd>- 2~3주 정도 소요</dd>
-                <dd>- 조기폐차조건</dd>
+                <dd>정상운행이 가능한 노후 경유자동차를 조기에 폐차할 경우 국가에서 보조금을 지원하는 제도</dd>
+                <dd>2~3주 정도 소요</dd>
+                <dd class="hypen">조기폐차조건</dd>
                 <dd class="middot">&middot; 최종 소유자의 소유기간이 6개월 이상인 경유자동차</dd>
                 <dd class="middot">&middot; 대기관리권역에 2년 이상 연속하여 등록된 경유자동차</dd>
                 <dd class="middot">&middot; 매연저감장치 부착 및 LPG 엔진 개조 이력이 없는 경유자동차</dd>
             </dl>
-            <dl class="prepare_paper">
+            <dl class="prepare_paper ds">
                 <dt>필요서류</dt>
                 <dd>
                     <table class="tbl">
@@ -102,15 +102,15 @@
         <div class="con" v-else-if="setActivated === 2">
             <dl class="prepare_paper">
                 <dt>차령초과</dt>
-                <dd>- 압류나 저당이 많아, 당장 납부가 불가능한 차량</dd>
-                <dd>- 45~60일 소요 (압류나 저당이 걸려 있기 때문에, 촉탁기관이나 채무자의 동의를 구하고 권리 행사를 할 수 있음)</dd>
-                <dd>- 대상차량</dd>
+                <dd>압류나 저당이 많아, 당장 납부가 불가능한 차량</dd>
+                <dd>45~60일 소요 (압류나 저당이 걸려 있기 때문에, 촉탁기관이나 채무자의 동의를 구하고 권리 행사를 할 수 있음)</dd>
+                <dd>대상</dd>
                 <dd class="middot">&middot; 승용 - 11년 이상</dd>
                 <dd class="middot">&middot; 승합 / 화물 / 특수 (경형 및소형) - 10년 이상</dd>
                 <dd class="middot">&middot; 승합 (중형 및 대형) - 10년 이상</dd>
                 <dd class="middot">&middot; 화물 / 특수 (중형 및 대형) - 12년 이상</dd>
             </dl>
-            <dl class="prepare_paper">
+            <dl class="prepare_paper ds">
                 <dt>필요서류</dt>
                 <dd>
                     <table class="tbl">
@@ -149,10 +149,10 @@
         <div class="con" v-else-if="setActivated === 3">
             <dl class="prepare_paper">
                 <dt>상속폐차</dt>
-                <dd>- 사망한 고인의 차량에 대해서 압류나 저당을 확인하고 사망 신고 전과후로 나뉨</dd>
-                <dd>- 일반폐차와 차령초과말소폐차로 구분하여 진행</dd>
+                <dd>사망한 고인의 차량에 대해서 압류나 저당을 확인하고 사망 신고 전과후로 나뉨</dd>
+                <dd>일반폐차와 차령초과말소폐차로 구분하여 진행</dd>
             </dl>
-            <dl class="prepare_paper">
+            <dl class="prepare_paper ds">
                 <dt>필요서류</dt>
                 <dd>
                     <table class="tbl">
@@ -205,9 +205,9 @@
         <div class="con" v-else-if="setActivated === 4">
             <dl class="prepare_paper">
                 <dt>법인폐차</dt>
-                <dd>- 법인 등록 차량으로 폐업, 해산, 청산, 파업 등의 사유로 폐차가 필요한 차량</dd>
+                <dd>법인 등록 차량으로 폐업, 해산, 청산, 파업 등의 사유로 폐차가 필요한 차량</dd>
             </dl>
-            <dl class="prepare_paper">
+            <dl class="prepare_paper ds">
                 <dt>필요서류</dt>
                 <dd>
                     <table class="tbl">
@@ -233,7 +233,7 @@
         <div class="con" v-else-if="setActivated === 5">
             <dl class="prepare_paper">
                 <dt>문제차</dt>
-                <dd>- 자동차등록증 상의 차주와 실제 소유주가 동일한데 저당과 압류가 설정되어 있어 일반폐차가 불가능한 차량</dd>
+                <dd>자동차등록증 상의 차주와 실제 소유주가 동일한데 저당과 압류가 설정되어 있어 일반폐차가 불가능한 차량</dd>
             </dl>
         </div>
 
@@ -261,12 +261,16 @@
 .prepare_paper{
     padding:20px 0;
     dt{
-        position: relative;font-size:18px;font-weight: bold;padding-left:10px;padding-bottom:10px;
+        position: relative;font-size:18px;font-weight: bold;padding-left:10px;padding-bottom:20px;
         &:after{position: absolute;width:5px;height:20px;background: #ffe11d;left:0;top:0;content:""}
     }
     dd{
-        font-size:16px;color:#000;letter-spacing: -0.5px;
-        &.middot{padding-left:10px;color:#9d9d9d}
+        position:relative;font-size:16px;color:#000;letter-spacing: -0.5px;margin-bottom:10px;padding-left:15px;
+        &:before{display: block;position:absolute;top:7px;left:0; width:5px;height:1px;content: "";background: #000}
+        &.middot{
+            padding-left:10px;color:#9d9d9d;
+            &:before{display: none}
+        }
     }
 }
 .tbl{
@@ -280,5 +284,9 @@
     td{border:1px solid #f4f4f4;font-size:16px;color:#595959;text-align: center;height:40px;line-height: 40px}
     td:nth-child(3n) {border-right:0}
     td:nth-child(3n+1) {border-left:0}
+}
+.ds {
+    dd{padding-left:0}
+    dd:before{display: none}
 }
 </style>

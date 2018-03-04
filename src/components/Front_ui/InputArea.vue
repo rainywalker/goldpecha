@@ -91,7 +91,7 @@
     .iptArea{
         max-width:$w;margin:$marg;padding:$pd;
         .topNotice{
-            font-size:16px;margin-bottom:7px;
+            font-size:16px;margin-bottom:7px;letter-spacing: -1px;
             strong{font-size:20px}
         }
         fieldset{

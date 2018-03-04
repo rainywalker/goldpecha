@@ -6,10 +6,7 @@
                 <a href="tel:010-7941-8785"><img src="http://pyechagold.cdn3.cafe24.com/v_img.jpg" alt=""></a>
             </div>
         </header>
-        <div class="info">
-            <h2>폐차 보상금을 알려드립니다.</h2>
-        </div>
-        <InputArea />
+
         <h3 class="inNotice"><p>골드폐차가 약속 드립니다.</p></h3>
         <BoxList />
         <h3 class="inNotice"><p>폐차 종류를 알려드립니다.</p></h3>
@@ -20,13 +17,17 @@
                 <li>저희와 같은 정식 관허 폐차장은 차주님들에게 수수료를 절대로 요구하지 않습니다.</li>
             </ul>
         </div>
+
+        <div class="info">
+            <h2>폐차 보상금을 알려드립니다.</h2>
+        </div>
+        <InputArea />
         <footer>
             <div class="copy">
                 <p>Copyright Goldpecha All reserverd 2018</p>
                 <address>양주폐차산업 / 사업자 등록번호 127-86-50736 / 관허 03-1 / 양주시 광적면 화합로 74번길 18</address>
             </div>
         </footer>
-
 
     </div>
 </template>
@@ -59,7 +60,7 @@ export default {
 
     }
     .info{
-        background:#ffe11d;height:58px;line-height:58px;margin-bottom:20px;
+        background:#ffe11d;height:58px;line-height:58px;margin-bottom:20px;margin-top:40px;
         h2{max-width:$w;margin:$marg;font-size: 24px;font-weight: normal;padding:$pd;}
     }
 
@@ -71,9 +72,9 @@ export default {
     .desc{
         padding:0 20px;
         ul{
-            max-width:$w;margin:$marg;padding-top:40px;
+            max-width:$w;margin:$marg;padding-top:10px;
             li {
-                padding-left:10px;position: relative;
+                padding-left:10px;position: relative;letter-spacing: -1px;
                 &::before{display: block;position: absolute;background:#000;left:0;top:5px;width:4px;height:4px;
                     border-radius: 4px;
                     content: '';}
@@ -83,7 +84,7 @@ export default {
     footer{
         background: #f4f4f4;
         .copy{
-            max-width:$w;margin:20px auto 0;padding:20px;
+            max-width:$w;margin:50px auto 0;padding:20px;
             p{margin-bottom:5px;}
             p,address{font-size:13px;color:#000}
 
