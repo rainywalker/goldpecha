@@ -11,21 +11,21 @@
             <li>
                 <dl>
                     <dt><em>02</em>당일지급&현장지급</dt>
-                    <dd>과태료나 압류가 없다면<strong>현장에서도 입금가능</strong> 합니다.</dd>
+                    <dd>과태료나 압류가 없다면 <strong>현장에서도 입금가능</strong> 합니다.</dd>
                 </dl>
 
             </li>
             <li>
                 <dl>
                     <dt><em>03</em>쉽고 빠른 업무 처리</dt>
-                    <dd>날짜만 정해서 전화주시면 말소까지<strong>알아서 처리</strong> 해드립니다.</dd>
+                    <dd>날짜만 정해서 전화주시면 말소까지 <strong>알아서 처리</strong> 해드립니다.</dd>
                 </dl>
 
             </li>
             <li>
                 <dl>
                     <dt><em>04</em>무료 견인 서비스</dt>
-                    <dd>원하시는 날짜에<strong>무료견인</strong>으로 방문드립니다.</dd>
+                    <dd>원하시는 날짜에 <strong>무료견인</strong>으로 방문드립니다.</dd>
                 </dl>
 
             </li>

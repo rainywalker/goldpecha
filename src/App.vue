@@ -18,5 +18,5 @@ li{list-style: none}
 html,body{min-height:100%;overflow-x: hidden}
 body{word-break: break-all;}
 
-.blind{font-size: 0;width:0;height:0;opacity: 0;visibility:0;line-height: 0}
+.blind{display:none;font-size: 0;width:0;height:0;opacity: 0;visibility:0;line-height: 0}
 </style>
