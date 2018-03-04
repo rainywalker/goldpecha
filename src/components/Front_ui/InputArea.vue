@@ -15,7 +15,7 @@
                 <dd><input type="text" ref="car_num" v-model.trim="users.car_num"></dd>
             </dl>
             <button id="submitBtn" type="button" @click.prevent="onSubmit">정보 보내기</button>
-            <p class="input_desc">내용 확인 후 전문 폐차지도사가 직접 고객님께 연락 드리겠습니다.</p>
+            <p class="input_desc">내용 확인 후 전문 폐차지도사가 직접 고객님께  연락 드리겠습니다.</p>
         </fieldset>
     </div>
 </template>

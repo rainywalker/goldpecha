@@ -65,7 +65,7 @@
                 padding:10px;
                 border-top:4px solid #ffe11d;
                 dt{
-                    color:#000;font-size:16px;margin-bottom:10px;font-weight: bold;
+                    color:#000;font-size:16px;margin-bottom:10px;font-weight: bold;letter-spacing: -1px;
                     em{display:inline-block;margin-right:5px;font-weight:bold;font-size:17px;color:#d26402;font-style: normal}
                 }
                 dd{
