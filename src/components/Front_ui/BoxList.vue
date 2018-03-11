@@ -1,6 +1,6 @@
 <template>
     <div class="boxList">
-        <p class="img_promise"><img src="http://pyechagold.cdn3.cafe24.com/img_promise.jpg" alt=""></p>
+        <p class="img_promise"><img src="http://pyechagold.cdn3.cafe24.com/img_promise.jpg" alt="정부 인증 1등급 폐차장 환경협회 조기폐차 전문 업체"></p>
         <ul>
             <li class="ico1">
                 <dl>
@@ -32,7 +32,7 @@
             </li>
             <li class="ico5">
                 <dl>
-                    <dt><em>05</em>말소증 무료 전송 서비스</dt>
+                    <dt><em>05</em>말소증 무료 전송</dt>
                     <dd><strong>보험 해지용 말소증</strong>을 원하시는 팩스, 이메일로 신속하게 보내드립니다.</dd>
                 </dl>
             </li>
@@ -55,13 +55,16 @@
     $pd : 0 20px;
 .boxList{
     max-width:$w;margin: $marg;padding:0 20px 30px;
-    .img_promise{margin-bottom:20px}
+    .img_promise{
+        margin-bottom:20px;
+        img{width:100%}
+    }
     ul{
         display: flex;justify-content: space-between;flex-wrap:wrap;
 
         li{
             &.noneBorder{border:none}
-            width:180px;height:116px;margin-bottom:10px;border:1px solid #f5f5f5;position: relative;
+            width:180px;height:136px;margin-bottom:10px;border:1px solid #f5f5f5;position: relative;
             &:after{position:absolute;background:url('http://pyechagold.cdn3.cafe24.com/sp_ico.png') no-repeat;
                 right:7px;bottom:7px;content: ''}
             a{display: inline-block;width:100%;height:116px}
@@ -87,7 +90,7 @@
                 a{
                     display: inline-block;width:100%;height:116px;position: relative;
                     &:before{display: block;width:180px;height:116px;position: absolute;margin-left:-90px;
-                        left:50%;top:0;content: '';background: url('http://pyechagold.cdn3.cafe24.com/ban.png') no-repeat}
+                        left:50%;top:10px;content: '';background: url('http://pyechagold.cdn3.cafe24.com/ban.jpg') no-repeat}
                 }
             }
         }

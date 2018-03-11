@@ -1,9 +1,9 @@
 <template>
     <div id="warp">
         <header>
-            <h1>골드폐차</h1>
+            <h1><img src="http://pyechagold.cdn3.cafe24.com/logo.png" alt="골드폐차"></h1>
             <div class="v_img">
-                <a href="tel:010-7941-8785"><img src="http://pyechagold.cdn3.cafe24.com/v_img.jpg" alt=""></a>
+                <a href="tel:010-7941-8785"><img src="http://pyechagold.cdn3.cafe24.com/v_img.jpg" alt="최고가 폐차비 보상 : 골드 폐차"></a>
             </div>
         </header>
         <h3 class="inNotice"><p>폐차절차를 알려드립니다.</p></h3>

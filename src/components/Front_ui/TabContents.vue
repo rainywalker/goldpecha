@@ -11,7 +11,7 @@
             </ul>
 
         </div>
-        <p><a href="tel:010-7941-8785"><img src="http://pyechagold.cdn3.cafe24.com/banner_tel.jpg" alt=""></a></p>
+        <p class="bannerTel"><a href="tel:010-7941-8785"><img src="http://pyechagold.cdn3.cafe24.com/banner_tel.jpg" alt="폐차 전문 박팀장 지금 바로 전화주세요"></a></p>
     </div>
 </template>
 
@@ -84,6 +84,7 @@ $pd : 0 20px;
     flex-wrap: wrap;
     border:1px solid #f4f4f4;
 }
+.bannerTel img{width:100%}
 .desc{margin-bottom:40px;}
 .active{background: red}
 </style>

@@ -88,7 +88,7 @@
         .topNotice{
             position:relative; font-size:16px;letter-spacing: -1px;padding-top:20px;padding-right:130px;
             line-height: 26px;
-            &:before{position: absolute;top:10px;right:20px;width:103px;height:92px;content: '';
+            &:before{position: absolute;top:10px;right:0px;width:103px;height:92px;content: '';
                 background:url('http://pyechagold.cdn3.cafe24.com/i_cert.png') no-repeat top right;}
             strong{font-size:20px}
         }

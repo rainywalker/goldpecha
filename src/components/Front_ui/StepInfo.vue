@@ -1,6 +1,6 @@
 <template>
     <div class="step_info_img">
-        <img src="http://pyechagold.cdn3.cafe24.com/step_img.jpg" alt="">
+        <img src="http://pyechagold.cdn3.cafe24.com/step_img.jpg" alt="폐차 절차">
     </div>
 </template>
 
