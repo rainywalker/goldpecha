@@ -33,7 +33,7 @@
             <li class="ico5">
                 <dl>
                     <dt><em>05</em>말소증 전송</dt>
-                    <dd><strong>보험해지에 필요한 말소증</strong>을 팩스나 이메일로 보내드립니다.</dd>
+                    <dd><strong>보험 해지에 필요한 말소증</strong>을 팩스나 이메일로 보내드립니다.</dd>
                 </dl>
             </li>
             <li class="banner">

@@ -130,7 +130,7 @@
         </div>
         <div class="con" v-else-if="setActivated === 2">
             <dl class="prepare_paper">
-                <dt>차령초과</dt>
+                <dt>차령초과(압류) 폐차</dt>
                 <dd>압류나 저당이 많아, 당장 납부가 불가능한 차량</dd>
                 <dd>45~60일 소요. <br>(압류나 저당이 걸려 있기 때문에, 촉탁기관이나 채무자의 동의를 구하고 권리 행사를 할 수 있음)</dd>
                 <dd>대상</dd>
