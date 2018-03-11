@@ -81,7 +81,7 @@
                             <td>법인 사업자 등록증</td>
                         </tr>
                         <tr>
-                            <td>통장사본</td>
+                            <td>통장 사본</td>
                             <td>대표자 통장</td>
                             <td>법인 인감증명서</td>
                         </tr>
@@ -93,7 +93,7 @@
                         <tr>
                             <td></td>
                             <td>위임장</td>
-                            <td>법인 통장사</td>
+                            <td>법인 통장 사본</td>
                         </tr>
                         </tbody>
                     </table>
@@ -113,15 +113,15 @@
                         <tbody>
                         <tr>
                             <td>서울특별시</td>
-                            <td>전지역</td>
+                            <td>전 지역</td>
                         </tr>
                         <tr>
                             <td>인천광역시</td>
-                            <td>옹진군을 제외한 전지역(옹진군 영흥면은 가능)</td>
+                            <td>옹진군을 제외한 전 지역 (옹진군 영흥면은 가능)</td>
                         </tr>
                         <tr>
                             <td>경기도</td>
-                            <td>연천, 가평, 양평 제외한 전지역</td>
+                            <td>연천, 가평, 양평 제외한 전 지역</td>
                         </tr>
                         </tbody>
                     </table>
@@ -132,10 +132,10 @@
             <dl class="prepare_paper">
                 <dt>차령초과</dt>
                 <dd>압류나 저당이 많아, 당장 납부가 불가능한 차량</dd>
-                <dd>45~60일 소요 (압류나 저당이 걸려 있기 때문에, 촉탁기관이나 채무자의 동의를 구하고 권리 행사를 할 수 있음)</dd>
+                <dd>45~60일 소요. <br>(압류나 저당이 걸려 있기 때문에, 촉탁기관이나 채무자의 동의를 구하고 권리 행사를 할 수 있음)</dd>
                 <dd>대상</dd>
                 <dd class="middot">&middot; 승용 - 11년 이상</dd>
-                <dd class="middot">&middot; 승합 / 화물 / 특수 (경형 및소형) - 10년 이상</dd>
+                <dd class="middot">&middot; 승합 / 화물 / 특수 (경형 및 소형) - 10년 이상</dd>
                 <dd class="middot">&middot; 승합 (중형 및 대형) - 10년 이상</dd>
                 <dd class="middot">&middot; 화물 / 특수 (중형 및 대형) - 12년 이상</dd>
             </dl>
@@ -182,8 +182,6 @@
             <dl class="prepare_paper">
                 <dt>상속폐차</dt>
                 <dd>사망한 고인의 차량을 폐차하는 방법</dd>
-                <dd>사망 신고 전과 후로 나뉨</dd>
-                <dd>사망 신고 전 - 일반폐차 / 사망 신고 후 - 차령초과(압류)폐차</dd>
             </dl>
             <dl class="prepare_paper ds">
                 <dt>필요서류</dt>
@@ -192,8 +190,8 @@
                         <caption class="blind">상속폐차</caption>
                         <thead>
                         <tr>
-                            <th class="none_l">사망 신고 전</th>
-                            <th class="none_r">사망 신고 후</th>
+                            <th class="none_l">사망신고 전</th>
+                            <th class="none_r">사망신고 후</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -207,7 +205,7 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="none_r">고인 가족관계 증명서</td>
+                            <td class="none_r">고인 가족관계증명서</td>
                         </tr>
                         <tr>
                             <td></td>
@@ -227,7 +225,7 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="none_r">한정 승인의 경우-한정승인 판결문 사본</td>
+                            <td class="none_r">한정 승인의 경우 - 한정승인 판결문 사본</td>
                         </tr>
                         </tbody>
                     </table>
@@ -238,7 +236,7 @@
         <div class="con" v-else-if="setActivated === 4">
             <dl class="prepare_paper">
                 <dt>법인폐차</dt>
-                <dd>법인 등록된 차량을 폐차하는 방법</dd>
+                <dd>법인 등록 차량을 폐차하는 방법</dd>
                 <dd>정상 운영, 폐업, 해산, 청산 등의 사유로 폐차가 필요한 차량</dd>
             </dl>
             <dl class="prepare_paper ds">
@@ -262,7 +260,7 @@
                         <td class="none_r">위임장</td>
                     </tr>
                     <tr>
-                        <td class="none_r">법인 등기부등본 (말소사항 포함)</td>
+                        <td class="none_r">법인 등기부등본 (말소 사항 포함)</td>
                     </tr>
                     <tr>
                         <td class="none_r">폐업 사실 증명서</td>

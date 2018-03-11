@@ -1,6 +1,6 @@
 <template>
     <div class="iptArea">
-        <p class="topNotice">차주와 폐차장에 근무하는 팀장 1대1 상담시스템<br><strong>수수료 무료 / 365일 무료 상담 / 무료 견인</strong></p>
+        <p class="topNotice">차주와 폐차장에 근무하는 팀장 1대1 상담 시스템<br><strong>수수료 <em>무료</em> / 365일 상담 <em>무료</em> / 견인 <em>무료</em></strong></p>
         <fieldset>
             <dl ref="inputField">
                 <dt>차종</dt>
@@ -88,6 +88,7 @@
         .topNotice{
             position:relative; font-size:16px;letter-spacing: -1px;padding-top:20px;padding-right:130px;
             line-height: 26px;
+            em{color:#de630b;font-style: normal}
             &:before{position: absolute;top:10px;right:0px;width:103px;height:92px;content: '';
                 background:url('http://pyechagold.cdn3.cafe24.com/i_cert.png') no-repeat top right;}
             strong{font-size:20px}

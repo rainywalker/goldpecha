@@ -6,7 +6,7 @@
                 <a href="tel:010-7941-8785"><img src="http://pyechagold.cdn3.cafe24.com/v_img.jpg" alt="최고가 폐차비 보상 : 골드 폐차"></a>
             </div>
         </header>
-        <h3 class="inNotice"><p>폐차절차를 알려드립니다.</p></h3>
+        <h3 class="inNotice"><p>폐차 절차를 알려드립니다.</p></h3>
         <StepInfo />
 
         <h3 class="inNotice"><p>골드폐차가 약속 드립니다.</p></h3>
@@ -52,7 +52,8 @@ export default {
     $pd : 0 20px;
 #warp{
     margin: 0 auto;
-    h1{background:#ffe11d;text-align: center;height:58px;line-height:58px;font-size: 28px;letter-spacing:1px;}
+    h1{display:flex;align-items:center;justify-content: center;background:#ffe11d;text-align: center;
+        height:58px;font-size: 28px;letter-spacing:1px;}
     .v_img{
         max-width:$w;margin:40px auto 30px;text-align: left;padding:$pd;
         a{display: inline-block;width:100%;}

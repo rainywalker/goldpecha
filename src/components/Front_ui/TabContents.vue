@@ -40,7 +40,7 @@ export default {
                 },
                 {
                     id : 2,
-                    name : '차령초과 폐차',
+                    name : '차령초과폐차',
                     isActive : false
                 },
 

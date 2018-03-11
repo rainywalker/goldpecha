@@ -12,28 +12,28 @@
             <li class="ico2">
                 <dl>
                     <dt><em>02</em>당일지급&현장지급</dt>
-                    <dd>미납 과태료나 압류가 없다면 <strong>현장에서도 입금 가능</strong>합니다.</dd>
+                    <dd>미납 과태료나 압류가 없다면 <strong>현장에서 입금도 가능</strong>합니다.</dd>
                 </dl>
 
             </li>
             <li class="ico3">
                 <dl>
-                    <dt><em>03</em>쉽고 빠른 업무 처리</dt>
+                    <dt><em>03</em>쉽고 빠른 업무처리</dt>
                     <dd>날짜만 정해서 전화주시면 번거로운 말소처리도 저희가 <strong>알아서 처리</strong>해드립니다.</dd>
                 </dl>
 
             </li>
             <li class="ico4">
                 <dl>
-                    <dt><em>04</em>무료 견인 서비스</dt>
+                    <dt><em>04</em>무료 견인</dt>
                     <dd>차주님이 원하시는 날짜에 <strong>무료 견인</strong>으로 방문드립니다.</dd>
                 </dl>
 
             </li>
             <li class="ico5">
                 <dl>
-                    <dt><em>05</em>말소증 무료 전송</dt>
-                    <dd><strong>보험 해지용 말소증</strong>을 원하시는 팩스, 이메일로 신속하게 보내드립니다.</dd>
+                    <dt><em>05</em>말소증 전송</dt>
+                    <dd><strong>보험해지에 필요한 말소증</strong>을 팩스나 이메일로 보내드립니다.</dd>
                 </dl>
             </li>
             <li class="banner">
@@ -83,8 +83,8 @@
             &.ico1 {&:after{width:38px;height:28px;}}
             &.ico2 {&:after{width:30px;height:28px;background-position:-40px 0 ;}}
             &.ico3 {&:after{width:29px;height:28px;background-position:-72px 0;}}
-            &.ico4 {&:after{width:30px;height:28px;background-position:-103px 0;}}
-            &.ico5 {&:after{width:31px;height:28px;background-position:-135px 0;}}
+            &.ico4 {&:after{width:30px;height:28px;background-position:-135px 0;}}
+            &.ico5 {&:after{width:31px;height:28px;background-position:-103px 0;}}
             &.banner{
                 background:#abdaeb;
                 a{
