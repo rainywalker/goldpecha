@@ -29,26 +29,24 @@
         methods: {
             validate() {
 
-
-                if (this.$refs.area.value === '') {
-                    alert('지역을 입력해주세요');
-                    this.$refs.area.focus();
-                    return false
-                }
-                if (this.$refs.phone.value === '') {
-                    alert('연락처를 입력해주세요');
-                    this.$refs.phone.focus();
-                    return false
-                }
                 if (this.$refs.car.value === '') {
                     alert('차종 입력해주세요');
                     this.$refs.car.focus();
                     return false
                 }
-
+                if (this.$refs.area.value === '') {
+                    alert('지역을 입력해주세요');
+                    this.$refs.area.focus();
+                    return false
+                }
                 if (this.$refs.car_num.value === '') {
                     alert('차량번호를 입력해주세요');
                     this.$refs.car_num.focus();
+                    return false
+                }
+                if (this.$refs.phone.value === '') {
+                    alert('연락처를 입력해주세요');
+                    this.$refs.phone.focus();
                     return false
                 }
                 return true;
