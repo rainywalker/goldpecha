@@ -6,26 +6,22 @@
                 <a href="tel:010-7941-8785"><img src="http://pyechagold.cdn3.cafe24.com/v_img.jpg" alt=""></a>
             </div>
         </header>
+        <h3 class="inNotice"><p>폐차절차를 알려드립니다.</p></h3>
+        <StepInfo />
 
         <h3 class="inNotice"><p>골드폐차가 약속 드립니다.</p></h3>
         <BoxList />
         <h3 class="inNotice"><p>폐차 종류를 알려드립니다.</p></h3>
         <TabContents />
-        <div class="desc">
-            <ul>
-                <li>폐차는 정부에서 인증한 정식 관허 폐차장에서 폐차를 하셔야 피해가 없습니다.</li>
-                <li>저희와 같은 정식 관허 폐차장은 차주님들에게 수수료를 절대로 요구하지 않습니다.</li>
-            </ul>
-        </div>
-
         <div class="info">
             <h2>폐차 보상금을 알려드립니다.</h2>
         </div>
         <InputArea />
         <footer>
             <div class="copy">
+                <img src="http://pyechagold.cdn3.cafe24.com/foot.png" alt="">
                 <p>Copyright Goldpecha All reserverd 2018</p>
-                <address>양주폐차산업 / 사업자 등록번호 127-86-50736 / 관허 03-1 / 양주시 광적면 화합로 74번길 18</address>
+                <address>양주폐차산업 / 사업자 등록번호 127-86-50736 / 관허 2003-1 / 양주시 광적면 화합로 74번길 18</address>
             </div>
         </footer>
 
@@ -36,12 +32,16 @@
 import InputArea from './Front_ui/InputArea';
 import BoxList from './Front_ui/BoxList';
 import TabContents from './Front_ui/TabContents';
+import StepInfo from './Front_ui/StepInfo';
+
+
 export default {
     name: 'CreateUser',
     components : {
         InputArea,
         BoxList,
-        TabContents
+        TabContents,
+        StepInfo
     }
 }
 </script>
@@ -67,7 +67,7 @@ export default {
     .inNotice{
         padding:0 20px;
         p{width:$w;margin:$marg}
-        background: #f5f5f5;height: 58px;line-height: 58px;margin-bottom:20px;font-weight: normal;font-size:24px;
+        background: #e5e5e5;height: 58px;line-height: 58px;margin-bottom:20px;font-weight: normal;font-size:24px;
     }
     .desc{
         padding:0 20px;
@@ -85,6 +85,7 @@ export default {
         background: #f4f4f4;
         .copy{
             max-width:$w;margin:50px auto 0;padding:20px;
+            img{width:100%}
             p{margin-bottom:5px;}
             p,address{font-size:13px;color:#000}
 

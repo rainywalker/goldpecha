@@ -3,8 +3,7 @@
         <table class="table">
             <thead>
             <tr>
-                <th>이름</th>
-                <th>연락처</th>
+                <th>핸드폰</th>
                 <th>차종</th>
                 <th>지역</th>
                 <th>차량번호</th>
@@ -13,7 +12,6 @@
             </thead>
             <tbody>
                 <tr v-for="user in users">
-                    <td>{{user.username}}</td>
                     <td>{{user.phone}}</td>
                     <td>{{user.car}}</td>
                     <td>{{user.area}}</td>
@@ -79,6 +77,7 @@ export default {
 
             td{
                 padding-left:10px;height:30px;border-bottom:1px solid #f5f5f5;font-size: 14px;border-left:1px solid #f5f5f5;
+                text-align: center;
             }
         }
     }

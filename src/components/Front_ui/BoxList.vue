@@ -1,38 +1,39 @@
 <template>
     <div class="boxList">
+        <p class="img_promise"><img src="http://pyechagold.cdn3.cafe24.com/img_promise.jpg" alt=""></p>
         <ul>
-            <li>
+            <li class="ico1">
                 <dl>
                     <dt><em>01</em>최고가 폐차비 지급</dt>
-                    <dd>정기적인 시장 조사를 통해 고객께 <strong>최고가를 보상</strong> 하겠습니다.</dd>
+                    <dd>정기적인 시장 조사를 통해 고객님께 업계 <strong>최고가 보상을</strong> 약속하겠습니다.</dd>
                 </dl>
 
             </li>
-            <li>
+            <li class="ico2">
                 <dl>
                     <dt><em>02</em>당일지급&현장지급</dt>
-                    <dd>과태료나 압류가 없다면 <strong>현장에서도 입금가능</strong> 합니다.</dd>
+                    <dd>미납 과태료나 압류가 없다면 <strong>현장에서도 입금 가능</strong>합니다.</dd>
                 </dl>
 
             </li>
-            <li>
+            <li class="ico3">
                 <dl>
                     <dt><em>03</em>쉽고 빠른 업무 처리</dt>
-                    <dd>날짜만 정해서 전화주시면 말소까지 <strong>알아서 처리</strong> 해드립니다.</dd>
+                    <dd>날짜만 정해서 전화주시면 번거로운 말소처리도 저희가 <strong>알아서 처리</strong>해드립니다.</dd>
                 </dl>
 
             </li>
-            <li>
+            <li class="ico4">
                 <dl>
                     <dt><em>04</em>무료 견인 서비스</dt>
-                    <dd>원하시는 날짜에 <strong>무료견인</strong>으로 방문드립니다.</dd>
+                    <dd>차주님이 원하시는 날짜에 <strong>무료 견인</strong>으로 방문드립니다.</dd>
                 </dl>
 
             </li>
-            <li>
+            <li class="ico5">
                 <dl>
-                    <dt><em>05</em>쉽고 빠른 업무처리</dt>
-                    <dd><strong>보험 해지용 말소증</strong>을 팩스, 이메일로 보내드립니다.</dd>
+                    <dt><em>05</em>말소증 무료 전송 서비스</dt>
+                    <dd><strong>보험 해지용 말소증</strong>을 원하시는 팩스, 이메일로 신속하게 보내드립니다.</dd>
                 </dl>
             </li>
             <li class="banner">
@@ -54,12 +55,15 @@
     $pd : 0 20px;
 .boxList{
     max-width:$w;margin: $marg;padding:0 20px 30px;
+    .img_promise{margin-bottom:20px}
     ul{
         display: flex;justify-content: space-between;flex-wrap:wrap;
 
         li{
             &.noneBorder{border:none}
-            width:180px;height:116px;margin-bottom:10px;border:1px solid #f5f5f5;
+            width:180px;height:116px;margin-bottom:10px;border:1px solid #f5f5f5;position: relative;
+            &:after{position:absolute;background:url('http://pyechagold.cdn3.cafe24.com/sp_ico.png') no-repeat;
+                right:7px;bottom:7px;content: ''}
             a{display: inline-block;width:100%;height:116px}
             dl{
                 padding:10px;
@@ -73,6 +77,11 @@
                     strong{color:#373737;font-weight: normal}
                 }
             }
+            &.ico1 {&:after{width:38px;height:28px;}}
+            &.ico2 {&:after{width:30px;height:28px;background-position:-40px 0 ;}}
+            &.ico3 {&:after{width:29px;height:28px;background-position:-72px 0;}}
+            &.ico4 {&:after{width:30px;height:28px;background-position:-103px 0;}}
+            &.ico5 {&:after{width:31px;height:28px;background-position:-135px 0;}}
             &.banner{
                 background:#abdaeb;
                 a{

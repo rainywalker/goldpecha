@@ -4,6 +4,14 @@
             <tab v-for="obj in buttonName" @toggle="toggle" :key="obj.id" :obj="obj" />
         </ul>
         <TabByContent :tabArr="buttonName" />
+        <div class="desc">
+            <ul>
+                <li>폐차는 정부에서 인증한 정식 관허 폐차장에서 폐차를 하셔야 피해가 없습니다.</li>
+                <li>저희 골드폐차는 정식 관허 폐차장으로써 차주님들에게 절대로 수수료를 요구하지 않습니다.</li>
+            </ul>
+
+        </div>
+        <p><a href="tel:010-7941-8785"><img src="http://pyechagold.cdn3.cafe24.com/banner_tel.jpg" alt=""></a></p>
     </div>
 </template>
 
@@ -32,7 +40,7 @@ export default {
                 },
                 {
                     id : 2,
-                    name : '차령초과(압류)폐차',
+                    name : '차령초과 폐차',
                     isActive : false
                 },
 
@@ -43,7 +51,7 @@ export default {
                 },
                 {
                     id : 4,
-                    name : `법인폐차 (폐업/해산/청산/파업)`,
+                    name : `법인폐차`,
                     isActive : false
                 },
                 {
@@ -76,5 +84,6 @@ $pd : 0 20px;
     flex-wrap: wrap;
     border:1px solid #f4f4f4;
 }
+.desc{margin-bottom:40px;}
 .active{background: red}
 </style>

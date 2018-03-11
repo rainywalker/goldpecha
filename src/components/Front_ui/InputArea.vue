@@ -1,21 +1,19 @@
 <template>
     <div class="iptArea">
-        <p class="topNotice">차주와 폐차 전문 팀장 1대1 상담으로 <strong>수수료 무료 / 365일 무료 상담 / 무료 견인</strong></p>
+        <p class="topNotice">차주와 폐차장에 근무하는 팀장 1대1 상담시스템<br><strong>수수료 무료 / 365일 무료 상담 / 무료 견인</strong></p>
         <fieldset>
             <dl ref="inputField">
-                <dt>이름</dt>
-                <dd><input type="text" ref="username" v-model.trim="users.username"></dd>
-                <dt>지역</dt>
-                <dd><input type="text" ref="area" v-model.trim="users.area"></dd>
-                <dt>연락처</dt>
-                <dd><input type="text" ref="phone" v-model.trim="users.phone"></dd>
                 <dt>차종</dt>
                 <dd><input type="text" ref="car" v-model.trim="users.car"></dd>
+                <dt>지역</dt>
+                <dd><input type="text" ref="area" v-model.trim="users.area"></dd>
                 <dt>차량번호</dt>
                 <dd><input type="text" ref="car_num" v-model.trim="users.car_num"></dd>
+                <dt>핸드폰</dt>
+                <dd><input type="text" ref="phone" v-model.trim="users.phone"></dd>
             </dl>
-            <button id="submitBtn" type="button" @click.prevent="onSubmit">정보 보내기</button>
-            <p class="input_desc">내용 확인 후 전문 폐차지도사가 직접 고객님께  연락 드리겠습니다.</p>
+            <button id="submitBtn" type="button" @click.prevent="onSubmit"><strong>최고가 폐차 보상금</strong> 지금 확인하세요!</button>
+            <p class="input_desc">버튼을 누르시면 확인 후 연락드리겠습니다.</p>
         </fieldset>
     </div>
 </template>
@@ -31,11 +29,7 @@
         methods: {
             validate() {
 
-                if (this.$refs.username.value === '') {
-                    alert('이름을 입력해주세요');
-                    this.$refs.username.focus();
-                    return false
-                }
+
                 if (this.$refs.area.value === '') {
                     alert('지역을 입력해주세요');
                     this.$refs.area.focus();
@@ -69,7 +63,6 @@
                 this.$http.post(`/api/user`, this.users)
                 .then(response => {
                     alert('전송되었습니다.');
-                    this.$refs.username.value = '';
                     this.$refs.area.value = '';
                     this.$refs.phone.value = '';
                     this.$refs.car.value = '';
@@ -90,12 +83,19 @@
 
     .iptArea{
         max-width:$w;margin:$marg;padding:$pd;
+        border:6px solid #f5f5f5;box-sizing: border-box;margin-bottom:30px;
+
         .topNotice{
-            font-size:16px;margin-bottom:7px;letter-spacing: -1px;
+            position:relative; font-size:16px;letter-spacing: -1px;padding-top:20px;padding-right:130px;
+            line-height: 26px;
+            &:before{position: absolute;top:10px;right:20px;width:103px;height:92px;content: '';
+                background:url('http://pyechagold.cdn3.cafe24.com/i_cert.png') no-repeat top right;}
             strong{font-size:20px}
         }
         fieldset{
-            border:6px solid #f5f5f5;box-sizing: border-box;padding:20px 30px;margin-bottom:30px;
+
+            padding-top:60px;
+
             dl{
                 overflow:hidden;
                 dt{display: block;float:left;clear:left;font-size: 19px;color:#666;height:30px;line-height: 30px;
@@ -109,10 +109,11 @@
                 }
             }
             #submitBtn{
-                display:inline-block;background:#ffe11d;width:100%;border:0;height:40px;font-size:20px;
-                font-weight: bold;line-height: 40px;cursor: pointer;
+                display:inline-block;background:#ffe11d;width:100%;border:0;height:40px;font-size:18px;
+                font-weight: bold;line-height: 40px;cursor: pointer;letter-spacing: -1px;
+                strong{color:#de630b}
             }
-            .input_desc{font-size:14px;color:#9d9d9d;margin-top:10px;padding:0}
+            .input_desc{font-size:14px;color:#9d9d9d;margin:10px 0;padding:0}
         }
 
     }
