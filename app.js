@@ -1,10 +1,12 @@
+require('./newrelic');
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const app = express();
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const user = require('./routes/user');
+
 
 
 
