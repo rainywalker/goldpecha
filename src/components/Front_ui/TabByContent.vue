@@ -237,7 +237,7 @@
             <dl class="prepare_paper">
                 <dt>법인폐차</dt>
                 <dd>법인 등록 차량을 폐차하는 방법</dd>
-                <dd>정상 운영, 폐업, 해산, 청산 등의 사유로 폐차가 필요한 차량</dd>
+                <dd>폐업, 해산, 청산 등의 사유로 폐차가 필요한 차량</dd>
             </dl>
             <dl class="prepare_paper ds">
                 <dt>필요서류</dt>
