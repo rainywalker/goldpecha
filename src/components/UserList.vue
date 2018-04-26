@@ -2,20 +2,19 @@
     <div class="user_list">
         <table class="table">
             <thead>
-            <tr>
-                <th>핸드폰</th>
-                <th>차종</th>
-                <th>지역</th>
+            <tr><th>지역</th>
                 <th>차량번호</th>
+                <th>차종</th>
+                <th>핸드폰</th>
                 <th>Action</th>
             </tr>
             </thead>
             <tbody>
                 <tr v-for="user in users">
-                    <td>{{user.phone}}</td>
-                    <td>{{user.car}}</td>
                     <td>{{user.area}}</td>
                     <td>{{user.car_num}}</td>
+                    <td>{{user.car}}</td>
+                    <td>{{user.phone}}</td>
                     <td><button type="button" @click="removeUser(user._id)">삭제</button></td>
                 </tr>
             </tbody>
