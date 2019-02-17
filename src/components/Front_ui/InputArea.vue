@@ -1,7 +1,9 @@
 <template>
     <div class="iptArea">
         <p class="topNotice">차주와 폐차장에 근무하는 팀장 1대1 상담 시스템<br><strong>수수료 <em>무료</em> / 365일 상담 <em>무료</em> / 견인 <em>무료</em></strong></p>
+
         <fieldset>
+            <form ref="formData" id="myForm">
             <dl ref="inputField">
                 <dt>차종</dt>
                 <dd><input type="text" ref="car" v-model.trim="users.car"></dd>
@@ -12,15 +14,21 @@
                 <dt>핸드폰</dt>
                 <dd><input type="text" ref="phone" v-model.trim="users.phone"></dd>
             </dl>
+            </form>
             <button id="submitBtn" type="button" @click.prevent="onSubmit"><strong>최고가 폐차 보상금</strong> 지금 확인하세요!</button>
             <p class="input_desc">버튼을 누르시면 확인 후 연락드리겠습니다.</p>
         </fieldset>
+
     </div>
 </template>
 
 <script>
+    let emailjs = require('emailjs-com');
     export default {
         name: "InputArea",
+        created() {
+            emailjs.init("user_FU0We8UYTmYRYZnaMUU6p");
+        },
         data () {
             return {
                 users : {}
@@ -60,6 +68,7 @@
 
                 this.$http.post(`/api/user`, this.users)
                 .then(response => {
+
                     alert('전송되었습니다.');
                     this.$refs.area.value = '';
                     this.$refs.phone.value = '';
@@ -68,7 +77,38 @@
                 })
                 .catch(e => {
                     this.errors.push(e)
-                })
+                });
+
+
+                /**
+                 *
+                 * @type {{
+                 *  user_id: string,
+                 *  service_id: string,
+                 *  template_params: {
+                 *    message_html: string,
+                 *    from_name: string
+                 *  },
+                 *  template_id: string
+                 * }}
+                 * @account :  pyechaman@gmail.com, sk246802!!
+
+                 */
+                const data = {
+                    service_id: 'pyechaman',
+                    template_id: 'template_HHp9aPbx',
+                    user_id: 'user_FU0We8UYTmYRYZnaMUU6p',
+                    template_params: {
+                        'from_name' : 'jaelomin',
+                        'message_html' : JSON.stringify(this.users)
+
+                    }
+                };
+
+                this.$http.post('https://api.emailjs.com/api/v1.0/email/send',data)
+                    .then(res => {
+                        console.log(res)
+                    })
             }
         }
     }
